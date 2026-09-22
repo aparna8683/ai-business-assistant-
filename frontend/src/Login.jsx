@@ -2,8 +2,9 @@ import { useState } from "react";
 import { ArrowRight, LockKeyhole, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const AUTH_API = "http://localhost:5000/api/auth";
-
+const AUTH_API = `${
+  import.meta.env.VITE_API_URL || "http://localhost:5000"
+}/api/auth`;
 function Login() {
   const navigate = useNavigate();
 

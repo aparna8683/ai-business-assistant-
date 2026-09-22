@@ -24,10 +24,13 @@ import Dashboard from "./Dashboard";
 
 
 
-const API_URL = "http://localhost:5000/api/chat";
-const LEADS_API = "http://localhost:5000/api/leads";
+const API_URL = `${
+  import.meta.env.VITE_API_URL || "http://localhost:5000"
+}/api/chat`;
 
-
+const LEADS_API = `${
+  import.meta.env.VITE_API_URL || "http://localhost:5000"
+}/api/leads`;
 function SmileCareWebsite() {
 
   const [menuOpen, setMenuOpen] = useState(false);

@@ -9,8 +9,9 @@ import {
   LogOut,
 } from "lucide-react";
 
-const LEADS_API = "http://localhost:5000/api/leads";
-
+const LEADS_API = `${
+  import.meta.env.VITE_API_URL || "http://localhost:5000"
+}/api/leads`;
 function LeadInbox() {
   const [leads, setLeads] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -8,8 +8,9 @@ import {
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
-const AUTH_API = "http://localhost:5000/api/auth";
-
+const AUTH_API = `${
+  import.meta.env.VITE_API_URL || "http://localhost:5000"
+}/api/auth`;
 function Signup() {
   const navigate = useNavigate();
 
