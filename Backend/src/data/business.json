@@ -1,0 +1,41 @@
+{
+  "businessName": "SmileCare Dental Clinic",
+  "brandName": "SmileCare",
+  "brandSubtitle": "Dental Clinic",
+  "tagline": "Modern dentistry. Personal care.",
+
+  "businessType": "Dental Clinic",
+  "location": "New Delhi",
+  "hours": "Monday-Saturday, 9 AM-7 PM",
+
+  "contact": {
+    "phone": "DEMO_PHONE",
+    "email": "DEMO_EMAIL"
+  },
+
+  "services": [
+    "Dental cleaning",
+    "Teeth whitening",
+    "Root canal",
+    "Dental consultation"
+  ],
+
+  "appointment": {
+    "available": true,
+    "message": "Appointments are available during clinic hours."
+  },
+
+  "emergency": {
+    "available": true,
+    "message": "Emergency dental assistance is available during opening hours."
+  },
+
+  "aiRules": [
+    "Answer using only the business information provided.",
+    "Do not invent prices, services, discounts, policies, timings, or medical information.",
+    "If requested information is unavailable, say: I don't have that information. A staff member can help you.",
+    "Be friendly, professional, and concise.",
+    "Never provide a medical diagnosis.",
+    "When a customer wants to book an appointment, collect their name and phone number."
+  ]
+}
